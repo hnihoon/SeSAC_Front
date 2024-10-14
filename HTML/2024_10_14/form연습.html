@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>숙소 예약</h1>
+
+    <h2>신상 정보</h2>
+    <form action="">
+      <label for="name">이름 : </label>
+      <input type="text" name="name" id="name" placeholder="이름 입력" /><br />
+      <label for="email">이메일 : </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="이메일 입력"
+      /><br />
+      예약자 사진 :
+      <input type="button" name="photo" id="photo" value="사용자 사진" /> 선택된
+      파일 없음
+      <hr />
+
+      <h2>상세 정보</h2>
+
+      <h3>선호 객실 타입</h3>
+      <label for="city">도시뷰 : </label>
+      <input type="radio" name="room_type" value="city" id="city" />
+      <label for="lake">레이크뷰 : </label>
+      <input type="radio" name="room_type" value="lake" id="lake" />
+      <label for="mountian">마운틴 : </label>
+      <input type="radio" name="room_type" value="mountian" id="mountian" />
+      <br />
+
+      <h3>동행자 정보</h3>
+      <label for="sum">인원수 : </label>
+      <input type="number" name="sum" id="sum" style="width: 55px" />
+      <br />
+
+      <h3>기타</h3>
+      <label for="etc">요청 사항 : </label>
+      <textarea name="etc" id="etc" rows="15" cols="35"></textarea>
+      <hr />
+      <input type="submit" value="전송" />
+    </form>
+  </body>
+</html>
