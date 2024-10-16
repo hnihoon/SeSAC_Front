@@ -1,0 +1,43 @@
+.big-box {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.nav-box-second {
+  display: flex;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.section-first {
+  width: 650px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-box {
+  display: flex;
+}
+
+.img-first {
+  display: flex;
+}
+
+.content-first {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
