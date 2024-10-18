@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .big-box {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        color: darkred;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      .main-box {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .main-box > div > div {
+        padding: 5px;
+      }
+      hr {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MENU</h1>
+    <h2>COFFEE</h2>
+    <div class="big-box">
+      <hr />
+      <div class="main-box">
+        <div>
+          <div>아메리카노</div>
+          <div>카페라떼</div>
+          <div>바닐라라떼</div>
+          <div>카라멜마끼아또</div>
+        </div>
+        <div>
+          <div>5.0/5.5</div>
+          <div>6.0/6.5</div>
+          <div>6.0/6.5</div>
+          <div>6.5/7.0</div>
+        </div>
+      </div>
+
+      <h2>ADE</h2>
+      <hr />
+      <div class="main-box">
+        <div>
+          <div>레몬에이드</div>
+          <div>자몽에이드</div>
+          <div>유자에이드</div>
+        </div>
+        <div>
+          <div>6.0</div>
+          <div>6.0</div>
+          <div>6.0</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
