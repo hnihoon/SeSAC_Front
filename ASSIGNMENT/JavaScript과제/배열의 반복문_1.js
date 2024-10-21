@@ -16,21 +16,21 @@
 // }
 
 //3. 원소가 짝수면 출력하는 조건문과 반복문을 작성한다.
-// arr = [0, 1, 2, 3, 4, 5];
+arr = [0, 1, 2, 3, 4, 5];
 
-// for (index of arr) {
-//   if (!(index == 0) && index % 2 == 0) {
-//     console.log(index);
-//   }
-// }
+for (index of arr) {
+  if (!(index == 0) && index % 2 == 0) {
+    console.log(index);
+  }
+}
 
 //4. 객체의 키와 값을 출력하는 반복문을 작성한다.
-let person = {
-  name: '홍길동',
-  age: 30,
-  job: '개발자',
-};
+// let person = {
+//   name: '홍길동',
+//   age: 30,
+//   job: '개발자',
+// };
 
-for (key in person) {
-  console.log(key + ', ' + person[key]);
-}
+// for (key in person) {
+//   console.log(key + ', ' + person[key]);
+// }
