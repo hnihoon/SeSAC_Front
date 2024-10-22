@@ -177,11 +177,11 @@ b = tmp;
 // }
 
 // 방법2
-for (let num = 1; num <= 30; num++) {
-  if (num % 2 && num % 3) {
-    console.log(num);
-  }
-}
+// for (let num = 1; num <= 30; num++) {
+//   if (num % 2 && num % 3) {
+//     console.log(num);
+//   }
+// }
 
 ////////////////////////////////////////////////////////
 
