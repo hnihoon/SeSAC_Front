@@ -303,6 +303,5 @@ let peoplearr = [
 let people = {};
 for (let person of peoplearr) {
   people[person.name] = person;
-  people.person.name = pe``;
 }
 console.log(people);
