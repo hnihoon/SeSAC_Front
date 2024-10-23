@@ -139,3 +139,15 @@
 //   check++;
 // }
 // console.log(result);
+
+let a = 19;
+let b = 19;
+let gugudan = [];
+for (n = 1; n <= a; n++) {
+  n_dan = [];
+  for (let i = 1; i <= b; i++) {
+    n_dan.push(n * i);
+  }
+  gugudan.push(n_dan);
+}
+console.log(gugudan);
