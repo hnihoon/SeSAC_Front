@@ -282,26 +282,33 @@
 
 // people.jun;
 
-let peoplearr = [
-  {
-    name: 'jun',
-    age: 15,
-    gender: 'M',
-  },
-  {
-    name: 'ken',
-    age: 36,
-    gender: 'F',
-  },
-  {
-    name: 'alex',
-    age: 37,
-    gender: null,
-  },
-];
+// let peoplearr = [
+//   {
+//     name: 'jun',
+//     age: 15,
+//     gender: 'M',
+//   },
+//   {
+//     name: 'ken',
+//     age: 36,
+//     gender: 'F',
+//   },
+//   {
+//     name: 'alex',
+//     age: 37,
+//     gender: null,
+//   },
+// ];
 
-let people = {};
-for (let person of peoplearr) {
-  people[person.name] = person;
+// let people = {};
+// for (let person of peoplearr) {
+//   people[person.name] = person;
+// }
+// console.log(people);
+
+objectPeople = {};
+
+for (const person of people) {
+  const name = person.name;
+  objectPeople[name] = person;
 }
-console.log(people);
