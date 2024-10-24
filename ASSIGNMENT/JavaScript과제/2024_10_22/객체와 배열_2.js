@@ -1,4 +1,4 @@
-// 배열에 저장된 객체의 키 content 와 isCompleted 의 값을 출력하는 반복문을 작성한다.
+// 배열에 저장된 객체의 키content 와 isCompleted 의 값을 출력하는 반복문을 작성한다.
 // todos를 활용해서 진행
 
 let todos = [];
