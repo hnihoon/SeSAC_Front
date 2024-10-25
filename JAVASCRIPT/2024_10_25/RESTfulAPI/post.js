@@ -1,3 +1,5 @@
+//post : 데이터 추가
+
 // fetch('https://jsonplaceholder.typicode.com/posts', {
 //   method: 'POST',
 //   body: JSON.stringify({

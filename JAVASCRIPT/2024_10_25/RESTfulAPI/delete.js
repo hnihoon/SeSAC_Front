@@ -1,3 +1,5 @@
+// delete : 데이터 삭제
+
 // fetch('https://jsonplaceholder.typicode.com/posts/1', {
 //   method: 'DELETE',
 // });

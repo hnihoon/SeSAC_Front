@@ -1,3 +1,5 @@
+// put : 데이터 수정
+
 // fetch('https://jsonplaceholder.typicode.com/posts/1', {
 //   method: 'PUT',
 //   body: JSON.stringify({

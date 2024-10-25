@@ -1,3 +1,5 @@
+// patch : 데이터 일부 수정
+
 fetch('https://jsonplaceholder.typicode.com/posts/1', {
   method: 'PATCH',
   body: JSON.stringify({

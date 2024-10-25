@@ -1,3 +1,5 @@
+//get : 데이터 조회
+
 // fetch('https://jsonplaceholder.typicode.com/todos/1')
 //   .then((response) => response.json()) // 응답 데이터를 JSON으로 변환
 //   .then((json) => {
