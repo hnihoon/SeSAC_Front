@@ -1,3 +1,5 @@
+//배열의 원소를 순차적으로 누적하여 하나의 값으로 반환
+
 // const nums = [1, 2, 3, 4];
 
 // const mulNums = nums.reduce((acc, cur) => {

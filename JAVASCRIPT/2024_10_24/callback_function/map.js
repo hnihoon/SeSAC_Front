@@ -1,3 +1,5 @@
+// 배열의 각 원소에 대해 콜백 함수의 반환값을 모아 새로운 배열을 반환
+
 const numbers = [1, 2, 3, 4];
 
 const doubled = numbers.map((num) => {

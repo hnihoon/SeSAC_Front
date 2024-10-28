@@ -1,3 +1,5 @@
+//배열의 원소를 모드 실행
+
 const numbers = [1, 2, 3, 4];
 
 console.log('일반적인 사용법');
