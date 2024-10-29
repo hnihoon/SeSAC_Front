@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <a id="link" href="https://www.example.com">Example</a>
+    <script>
+      // 요소 선택
+      const link = document.querySelector('#link');
+
+      // 속성 값 읽기
+      console.log(link.getAttribute('href')); // https://www.example.com
+
+      // 속성 값 변경하기
+      link.setAttribute('href', 'https://www.google.com');
+      console.log(link.getAttribute('href')); // https://www.newsite.com
+
+      // 속성 직접 접근
+      console.log(link.href); // https://www.newsite.com
+
+      link.href = 'https://www.google.com';
+      console.log(link.href); // https://www.another.com
+
+      // id 조작 및 접근
+      link.id = 'new-link';
+      console.log(link.id); // new-link
+
+      // class 조작 및 접근
+      link.className = 'link a-tag';
+      console.log(link.className); // link a-tag
+    </script>
+  </body>
+</html>

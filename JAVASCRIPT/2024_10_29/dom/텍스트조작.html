@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html>
+<html>
+  <body>
+    <h1>원래 제목</h1>
+    <script>
+      const heading = document.querySelector('h1');
+      console.log(heading.textContent); // 원래 제목
+
+      heading.textContent = '새로운 제목';
+      console.log(heading.textContent); // 새로운 제목
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- div-tag안에 모든 내용이 삭제됨 -->
+    <div id="div-tag">
+      div의 텍스트 <!-- 단일 내용만 수정하고 싶은경우 <span>div의 텍스트</span> 식으로 컨트롤-->
+      <div>
+        div 안 div의 텍스트
+        <div>div 안 div 안 div의 텍스트</div>
+      </div>
+    </div>
+    <script>
+      const divTag = document.querySelector('#div-tag');
+      console.log(divTag.textContent);
+      // div의 텍스트
+      // div 안 div의 텍스트
+      // div 안 div 안 div의 텍스트
+
+      divTag.textContent = '텍스트 수정';
+    </script>
+  </body>
+</html>

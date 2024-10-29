@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="container">
+      <p id="first">첫 번째 문단</p>
+      <p class="second">두 번째 문단</p>
+    </div>
+    <script>
+      const paragraphs = document.querySelectorAll('p');
+      paragraphs.forEach((p, index) => {
+        console.log(`문단 ${index + 1}: ${p.textContent}`);
+      });
+      // 문단 1: 첫 번째 문단
+      // 문단 2: 두 번째 문단
+    </script>
+  </body>
+</html>
