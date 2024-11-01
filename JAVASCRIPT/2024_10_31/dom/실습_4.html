@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #big-box {
+            display: flex;
+        }
+        div {
+            background-color: aqua;
+            width: 80px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="big-box">
+    <div id="line_1">
+        <div>x</div>
+    </div>
+    <div id="line_2">
+    </div>
+    <div id="line_3">
+    </div>
+    <div id="line_4">
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+        <div>x</div>
+    </div>
+
+    <script>
+        const student = ['이태영', '박재훈', '임유진', '차윤선', '서승덕', '육슬찬', '윤대정', 
+                         '오예진', '정여원', '정승연', '이상호', '임수빈', '정명훈', '이재현', 
+                         '박하은', '김동훈', '가경식', '강경훈', '최원호', '노영재', '박종빈', 
+                         '김상호', '원성준'];
+        function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1)); // 0에서 i 사이의 인덱스 무작위 선택
+            [array[i], array[j]] = [array[j], array[i]]; // 요소 위치 교환
+        }
+        return array;
+    }
+    const shuffledStudent = shuffleArray(student);
+
+    const line_1 = document.querySelector('#line_1');
+    const line_2 = document.querySelector('#line_2');
+    const line_3 = document.querySelector('#line_3');
+    const line_4 = document.querySelector('#line_4');
+    let studentcount = 0;
+    
+    student.forEach(el =>{
+        if(studentcount < 6){
+            const newDiv = document.createElement('div');
+            newDiv.textContent = el
+            line_1.append(newDiv);
+            studentcount++;
+        } else if(studentcount < 13) {
+            const newDiv = document.createElement('div');
+            newDiv.textContent = el
+            line_2.append(newDiv);
+            studentcount++;
+        } else if(studentcount < 20){
+            const newDiv = document.createElement('div');
+            newDiv.textContent = el
+            line_3.append(newDiv);
+            studentcount++;
+        } else {
+            const newDiv = document.createElement('div');
+            newDiv.textContent = el
+            line_4.append(newDiv);
+            studentcount++;
+        }
+        })
+    
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <button>버튼</button>
+    <script>
+        const boxcolor = document.querySelectorAll('.box');
+        const button = document.querySelector('button')
+        
+        boxcolor.forEach(el => {
+            {
+                button.addEventListener('click',() => {
+                    let r = Math.floor(Math.random() * 256)
+                    let g = Math.floor(Math.random() * 256)
+                    let b = Math.floor(Math.random() * 256)
+                    el.style.backgroundColor = `rgb(${r},${g},${b})`;
+                })
+            }
+        })
+
+    </script>
+</body>
+</html>
