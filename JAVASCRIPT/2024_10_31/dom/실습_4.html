@@ -33,7 +33,7 @@
     </div>
 
     <script>
-        let student = ['이태영', '박재훈', '임유진', '차윤선', '서승덕', '육슬찬', '윤대정', 
+        const student = ['이태영', '박재훈', '임유진', '차윤선', '서승덕', '육슬찬', '윤대정', 
                          '오예진', '정여원', '정승연', '이상호', '임수빈', '정명훈', '이재현', 
                          '박하은', '김동훈', '가경식', '강경훈', '최원호', '노영재', '박종빈', 
                          '김상호', '원성준'];
@@ -44,8 +44,7 @@
         }
         return array;
     }
-
-    shuffleArray(student);
+    const shuffledStudent = shuffleArray(student);
 
     const line_1 = document.querySelector('#line_1');
     const line_2 = document.querySelector('#line_2');
@@ -72,7 +71,7 @@
         } else {
             const newDiv = document.createElement('div');
             newDiv.textContent = el
-            line_4.append(newDiv);
+            line_4.prepend(newDiv);
             studentcount++;
         }
         })
