@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+  }
+
+  h1 {
+    color: #800000;
+    font-size: 3rem;
+  }
+  .menu-board {
+    margin: 0 auto;
+    width: 30%;
+  }
+  .menu-category {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .menu {
+    font-size: 1.5rem;
+    margin: 20px 0px 20px 0;
+    /* 메뉴 - 가격의 부모 요소를 플렉스 컨테이너로 지정 */
+    display: flex;
+    /* 플렉스 아이템의 배치 space-between 설정  */
+    justify-content: space-between;
+  }
+  .menu-name {
+    font-style: italic;
+  }
