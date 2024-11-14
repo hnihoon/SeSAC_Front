@@ -1,14 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import PostList from "../pages/PostList";
+import Hello from "../pages/Hello";
 import RootLayout from "../RootLayout";
 import PostDetail from "../pages/PostDetail";
+import NotFound from "../pages/NotFound";
 import PostCreate from "../pages/PostCreate";
-
-  const router = createBrowserRouter([
-    {
+const router = createBrowserRouter([
+  {
     path: "/",
     element: <RootLayout />,
+    // errorElement: <NotFound />,
     children: [
       {
         index: true,
@@ -28,6 +30,10 @@ import PostCreate from "../pages/PostCreate";
       },
     ],
   },
+  // {
+  //   path: '/music',
+  //   element: <musiclayout></musiclayout>
+  // }
 ]);
 
 export default router;
