@@ -26,7 +26,7 @@ export default function PostList() {
     
   }
   fetchPost()
-})
+}, [])
 
   return (
     <div>
